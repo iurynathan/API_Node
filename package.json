@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js",
+    "start": "node /bin/server.js",
     "dev": "PORT=3001 nodemon ./bin/server.js"
   },
   "keywords": [],
