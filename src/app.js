@@ -6,7 +6,7 @@ const config = require('./config')
 const app = express()
 const router = express.Router()
 
-mongoose.connect(config.connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const Product = require('./models/product')
 const Customer = require('./models/customer')
